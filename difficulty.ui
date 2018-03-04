@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>difficulty</class>
+ <widget class="QDialog" name="difficulty">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>374</width>
+    <height>232</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Game Mode</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Please select the game mode:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="easy">
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Easy</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="medium">
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Meduim</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="difficult">
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Difficult</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>easy</sender>
+   <signal>clicked()</signal>
+   <receiver>difficulty</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>441</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>medium</sender>
+   <signal>clicked()</signal>
+   <receiver>difficulty</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>352</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>difficult</sender>
+   <signal>clicked()</signal>
+   <receiver>difficulty</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>198</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>440</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
